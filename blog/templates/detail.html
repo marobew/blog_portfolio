@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block contents %}
+<body>
+    <br>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2>{{blog.title}}</h2>
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">{{blog.title}}</h5> -->
+                <p class="card-text">{{blog.body}}</p>
+            </div>
+            <div class="card-footer text-muted">
+                {{blog.pup_date}}
+            </div>
+            <a href="{% url 'home'%}" class="btn btn-primary btn-outline-light" style="background-color: #aec6cc;">전체 글 보기</a>
+        </div>
+    </div>
+</body>
+{% endblock%}
