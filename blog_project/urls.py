@@ -12,6 +12,7 @@ urlpatterns = [
     path('blog/<int:blog_id>', blog.views.detail, name="detail"),  # <> : path 컨버터
     path('blog/new/', blog.views.new, name="new"),
     path('blog/create/', blog.views.create, name="create"),
+    path('blog/newblog/', blog.views.blogpost, name="newblog"),
     # path('blog/', include('blog.urls')),
     path('portfolio/', portfolio.views.portfolio, name="portfolio"),
     # path('accounts/', include('accounts.urls')),
